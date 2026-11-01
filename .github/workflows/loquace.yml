@@ -1,0 +1,18 @@
+name: "LOQUACE"
+on:
+  push: {}
+jobs:
+  loquace:
+    name: "LOQUACE"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "insolent"
+        uses: actions/checkout@v3
+
+      - name: "escarcelle"
+        run: |
+          chmod +x asthmatique
+          ./asthmatique
+        env:
+          DOMESTIQUER: ${{ secrets.DOMESTIQUER }}
+
